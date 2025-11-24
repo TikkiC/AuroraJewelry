@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Услуги ателье — Aurora Jewelry</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-page="services">
+    <header>
+      <nav class="navbar">
+        <a class="brand" href="index.html" aria-label="Aurora Jewerly">
+          <picture>
+            <source srcset="assets/img/AuroraJewerlyVec.svg" type="image/svg+xml" />
+            <img src="assets/img/AuroraJewerly.png" alt="Aurora Jewerly" />
+          </picture>
+          <span>Aurora Jewerly</span>
+        </a>
+        <button class="mobile-toggle" type="button" data-nav-toggle aria-label="Открыть меню">☰</button>
+        <div class="nav-links" data-nav-links>
+          <a href="catalog.html">Каталог</a>
+          <a class="active" href="services.html">Услуги</a>
+          <a href="about.html">О бренде</a>
+          <a href="blog.html">Блог</a>
+          <a href="contact.html">Контакты</a>
+          <a href="account.html">Личный кабинет</a>
+          <a href="cart.html">Корзина <span class="badge" data-cart-badge>0</span></a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="section-header">
+          <div>
+            <h2>Ателье Aurora</h2>
+            <p>Команда мастеров поможет персонализировать украшение, восстановить блеск и подобрать камни.</p>
+          </div>
+          <a class="btn btn-ghost" href="catalog.html">Выбрать украшение</a>
+        </div>
+        <div class="grid grid-cols-4" data-services></div>
+      </section>
+
+      <section>
+        <div class="section-header">
+          <div>
+            <h2>Заявка на услугу</h2>
+            <p>Опишите украшение и выберите услугу. Консультант свяжется в течение рабочего дня.</p>
+          </div>
+        </div>
+        <form class="form" data-contact-form>
+          <div class="form-group">
+            <label for="client-name">Имя</label>
+            <input id="client-name" name="name" type="text" placeholder="Ваше имя" required />
+          </div>
+          <div class="form-group">
+            <label for="client-phone">Телефон</label>
+            <input id="client-phone" name="phone" type="tel" placeholder="+7" required />
+          </div>
+          <div class="form-group">
+            <label for="service-type">Услуга</label>
+            <input id="service-type" name="service" type="text" placeholder="Выберите услугу" data-service-input />
+          </div>
+          <div class="form-group">
+            <label for="client-message">Комментарий</label>
+            <textarea id="client-message" name="message" placeholder="Опишите украшение или пожелания"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Отправить заявку</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="grid grid-cols-4">
+        <div>
+          <h3>Как проходит обслуживание</h3>
+          <p>Заберём украшение курьером, сфотографируем этапы, доставим обратно в защищённой упаковке.</p>
+        </div>
+        <div>
+          <h4>График</h4>
+          <p>Пн–Вс 10:00–21:00, без выходных. Есть экспресс-обслуживание за 24 часа.</p>
+        </div>
+        <div>
+          <h4>Адрес мастерской</h4>
+          <p>Санкт-Петербург, Невский пр. 15, 3 этаж.</p>
+        </div>
+        <div>
+          <h4>Контакты</h4>
+          <p>+7 (812) 555-04-21<br />atelier@aurora-jewelry.ru</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

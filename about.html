@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>О бренде — Aurora Jewelry</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-page="about">
+    <header>
+      <nav class="navbar">
+        <a class="brand" href="index.html" aria-label="Aurora Jewerly">
+          <picture>
+            <source srcset="assets/img/AuroraJewerlyVec.svg" type="image/svg+xml" />
+            <img src="assets/img/AuroraJewerly.png" alt="Aurora Jewerly" />
+          </picture>
+          <span>Aurora Jewerly</span>
+        </a>
+        <button class="mobile-toggle" type="button" data-nav-toggle aria-label="Открыть меню">☰</button>
+        <div class="nav-links" data-nav-links>
+          <a href="catalog.html">Каталог</a>
+          <a href="services.html">Услуги</a>
+          <a class="active" href="about.html">О бренде</a>
+          <a href="blog.html">Блог</a>
+          <a href="contact.html">Контакты</a>
+          <a href="account.html">Личный кабинет</a>
+          <a href="cart.html">Корзина <span class="badge" data-cart-badge>0</span></a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="section-header">
+          <div>
+            <h2>История Aurora Jewelry</h2>
+            <p>Семейная мастерская, ставшая онлайн-бутиком с вниманием к деталям и персонализации.</p>
+          </div>
+        </div>
+        <div class="timeline" data-timeline></div>
+      </section>
+
+      <section>
+        <div class="section-header">
+          <h2>Наши ценности</h2>
+        </div>
+        <div class="grid grid-cols-4">
+          <article class="card">
+            <h3>Этика производства</h3>
+            <p>Используем золото с подтверждённым происхождением и сертифицированные камни.</p>
+          </article>
+          <article class="card">
+            <h3>Персонализация</h3>
+            <p>Каждое украшение можно адаптировать: поменять камни, добавить гравировку, настроить посадку.</p>
+          </article>
+          <article class="card">
+            <h3>Технологии</h3>
+            <p>Виртуальная примерка, 3D-модели и онлайн-консультации сокращают время на выбор.</p>
+          </article>
+          <article class="card">
+            <h3>Сервис</h3>
+            <p>Поддержка 7/7, бесплатная чистка раз в год и trade-in для обновления коллекции.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="grid grid-cols-4">
+        <div>
+          <h3>Узнать больше</h3>
+          <p>Посетите блог, чтобы прочитать истории клиентов, рекомендации стилистов и новости коллекций.</p>
+        </div>
+        <div>
+          <h4>Соцсети</h4>
+          <p>Instagram, VK, Pinterest — вдохновение и backstage мастерской.</p>
+        </div>
+        <div>
+          <h4>Команда</h4>
+          <p>15 мастеров, 5 дизайнеров, 12 консультантов. Каждый проходит обучение каждые полгода.</p>
+        </div>
+        <div>
+          <h4>Сертификаты</h4>
+          <p>GIA, HRD, ISO 9001 — гарантируем качество материалов и процессов.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

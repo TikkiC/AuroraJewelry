@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Карточка товара — Aurora Jewelry</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-page="product">
+    <header>
+      <nav class="navbar">
+        <a class="brand" href="index.html" aria-label="Aurora Jewerly">
+          <picture>
+            <source srcset="assets/img/AuroraJewerlyVec.svg" type="image/svg+xml" />
+            <img src="assets/img/AuroraJewerly.png" alt="Aurora Jewerly" />
+          </picture>
+          <span>Aurora Jewerly</span>
+        </a>
+        <button class="mobile-toggle" type="button" data-nav-toggle aria-label="Открыть меню">☰</button>
+        <div class="nav-links" data-nav-links>
+          <a href="catalog.html">Каталог</a>
+          <a href="services.html">Услуги</a>
+          <a href="about.html">О бренде</a>
+          <a href="blog.html">Блог</a>
+          <a href="contact.html">Контакты</a>
+          <a href="account.html">Личный кабинет</a>
+          <a href="cart.html">Корзина <span class="badge" data-cart-badge>0</span></a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="section-header">
+          <div>
+            <h2>Карточка изделия</h2>
+            <p>Возвратитесь к каталогу, чтобы сравнить больше вариантов, или добавьте товар в корзину.</p>
+          </div>
+          <a class="btn btn-ghost" href="catalog.html">Вернуться к каталогу</a>
+        </div>
+        <div data-product-detail></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="grid grid-cols-4">
+        <div>
+          <h3>Нужна помощь с выбором?</h3>
+          <p>Проконсультируем и подберём украшение под событие и бюджет. Звоните +7 (812) 555-04-21.</p>
+        </div>
+        <div>
+          <h4>Услуги</h4>
+          <ul>
+            <li><a href="services.html">Гравировка</a></li>
+            <li><a href="services.html">Проверка подлинности</a></li>
+            <li><a href="services.html">Доставка и примерка</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Оплата</h4>
+          <p>Принимаем карты Visa/Mastercard, рассрочку и кредит. Доступен наложенный платеж.</p>
+        </div>
+        <div>
+          <h4>Доставка</h4>
+          <p>Курьер по РФ, пункты выдачи, экспресс по Санкт-Петербургу. Бесплатно от 30 000 ₽.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

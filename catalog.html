@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Каталог — Aurora Jewelry</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-page="catalog">
+    <header>
+      <nav class="navbar">
+        <a class="brand" href="index.html" aria-label="Aurora Jewerly">
+          <picture>
+            <source srcset="assets/img/AuroraJewerlyVec.svg" type="image/svg+xml" />
+            <img src="assets/img/AuroraJewerly.png" alt="Aurora Jewerly" />
+          </picture>
+          <span>Aurora Jewerly</span>
+        </a>
+        <button class="mobile-toggle" type="button" data-nav-toggle aria-label="Открыть меню">☰</button>
+        <div class="nav-links" data-nav-links>
+          <a class="active" href="catalog.html">Каталог</a>
+          <a href="services.html">Услуги</a>
+          <a href="about.html">О бренде</a>
+          <a href="blog.html">Блог</a>
+          <a href="contact.html">Контакты</a>
+          <a href="account.html">Личный кабинет</a>
+          <a href="cart.html">Корзина <span class="badge" data-cart-badge>0</span></a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="section-header">
+          <div>
+            <h2>Каталог украшений</h2>
+            <p>Используйте фильтры, чтобы найти подходящее изделие по типу, металлу или бюджету.</p>
+          </div>
+          <a class="btn btn-ghost" href="services.html">Нужна консультация ювелира?</a>
+        </div>
+
+        <div class="filters">
+          <label>
+            Тип
+            <select data-filter data-filter-type>
+              <option value="all">Все категории</option>
+              <option value="кольца">Кольца</option>
+              <option value="серьги">Серьги</option>
+              <option value="колье">Колье</option>
+              <option value="браслеты">Браслеты</option>
+              <option value="часы">Часы</option>
+              <option value="броши">Броши</option>
+              <option value="наборы">Наборы</option>
+            </select>
+          </label>
+          <label>
+            Металл
+            <select data-filter data-filter-metal>
+              <option value="all">Любой</option>
+              <option value="золото">Золото</option>
+              <option value="белое золото">Белое золото</option>
+              <option value="розовое золото">Розовое золото</option>
+              <option value="серебро">Серебро</option>
+              <option value="сталь">Сталь</option>
+              <option value="комбинированный">Комбинированный</option>
+            </select>
+          </label>
+          <label>
+            Цена
+            <select data-filter data-filter-price>
+              <option value="all">Любой диапазон</option>
+              <option value="0-20000">до 20 000 ₽</option>
+              <option value="20000-40000">20 000–40 000 ₽</option>
+              <option value="40000-60000">40 000–60 000 ₽</option>
+              <option value="60000-100000">60 000 ₽ и выше</option>
+            </select>
+          </label>
+          <label>
+            Поиск
+            <input type="search" placeholder="Название, описание или тег" data-filter data-filter-query />
+          </label>
+        </div>
+
+        <div class="grid grid-cols-4" data-products></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="grid grid-cols-4">
+        <div>
+          <h3>Aurora Jewelry</h3>
+          <p>Украшения, созданные в российской мастерской, с доставкой по всей стране.</p>
+        </div>
+        <div>
+          <h4>Сервисы</h4>
+          <ul>
+            <li><a href="services.html">Гравировка</a></li>
+            <li><a href="services.html">Чистка и реставрация</a></li>
+            <li><a href="services.html">Trade-in</a></li>
+            <li><a href="services.html">Примерка на дому</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Помощь</h4>
+          <ul>
+            <li><a href="contact.html">Чат с консультантом</a></li>
+            <li><a href="contact.html">Пункты выдачи</a></li>
+            <li><a href="contact.html">Частые вопросы</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Гарантии</h4>
+          <p>Сертификаты GIA/HRD, 2 года гарантии на изделия Aurora, бесплатная чистка раз в год.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

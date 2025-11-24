@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакты — Aurora Jewelry</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-page="contact">
+    <header>
+      <nav class="navbar">
+        <a class="brand" href="index.html" aria-label="Aurora Jewerly">
+          <picture>
+            <source srcset="assets/img/AuroraJewerlyVec.svg" type="image/svg+xml" />
+            <img src="assets/img/AuroraJewerly.png" alt="Aurora Jewerly" />
+          </picture>
+          <span>Aurora Jewerly</span>
+        </a>
+        <button class="mobile-toggle" type="button" data-nav-toggle aria-label="Открыть меню">☰</button>
+        <div class="nav-links" data-nav-links>
+          <a href="catalog.html">Каталог</a>
+          <a href="services.html">Услуги</a>
+          <a href="about.html">О бренде</a>
+          <a href="blog.html">Блог</a>
+          <a class="active" href="contact.html">Контакты</a>
+          <a href="account.html">Личный кабинет</a>
+          <a href="cart.html">Корзина <span class="badge" data-cart-badge>0</span></a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="section-header">
+          <div>
+            <h2>Свяжитесь с нами</h2>
+            <p>Заполните форму или напишите в чат — ответим в течение 15 минут в рабочее время.</p>
+          </div>
+          <div class="card">
+            <p><strong>Телефон:</strong> +7 (812) 555-04-21</p>
+            <p><strong>E-mail:</strong> hello@aurora-jewelry.ru</p>
+            <p><strong>Адрес салона:</strong> Санкт-Петербург, Невский пр., 15</p>
+            <p><strong>Часы работы:</strong> Пн–Вс, 10:00–22:00</p>
+          </div>
+        </div>
+
+        <form class="form" data-contact-form>
+          <div class="form-group">
+            <label for="contact-name">Имя</label>
+            <input id="contact-name" name="name" type="text" placeholder="Как к вам обращаться" required />
+          </div>
+          <div class="form-group">
+            <label for="contact-email">E-mail</label>
+            <input id="contact-email" name="email" type="email" placeholder="email@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="contact-topic">Тема обращения</label>
+            <select id="contact-topic" name="topic" required>
+              <option value="">Выберите тему</option>
+              <option value="order">Вопрос по заказу</option>
+              <option value="service">Заявка на услугу</option>
+              <option value="partnership">Сотрудничество</option>
+              <option value="other">Другое</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="contact-message">Сообщение</label>
+            <textarea id="contact-message" name="message" placeholder="Опишите вопрос" required></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Отправить</button>
+        </form>
+      </section>
+
+      <section>
+        <div class="section-header">
+          <h2>Как нас найти</h2>
+        </div>
+        <div class="card" style="height:320px; display:flex; align-items:center; justify-content:center;">
+          <p>Интерактивная карта откроется в прототипе Figma. Адрес: Невский пр., 15.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="grid grid-cols-4">
+        <div>
+          <h3>Позвоните нам</h3>
+          <p>+7 (812) 555-04-21</p>
+        </div>
+        <div>
+          <h4>Напишите</h4>
+          <p>hello@aurora-jewelry.ru</p>
+        </div>
+        <div>
+          <h4>Чат</h4>
+          <p>Telegram @aurora_jewelry</p>
+        </div>
+        <div>
+          <h4>Адрес</h4>
+          <p>Санкт-Петербург, Невский пр., 15</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

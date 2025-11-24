@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Личный кабинет — Aurora Jewelry</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-page="account">
+    <header>
+      <nav class="navbar">
+        <a class="brand" href="index.html" aria-label="Aurora Jewerly">
+          <picture>
+            <source srcset="assets/img/AuroraJewerlyVec.svg" type="image/svg+xml" />
+            <img src="assets/img/AuroraJewerly.png" alt="Aurora Jewerly" />
+          </picture>
+          <span>Aurora Jewerly</span>
+        </a>
+        <button class="mobile-toggle" type="button" data-nav-toggle aria-label="Открыть меню">☰</button>
+        <div class="nav-links" data-nav-links>
+          <a href="catalog.html">Каталог</a>
+          <a href="services.html">Услуги</a>
+          <a href="about.html">О бренде</a>
+          <a href="blog.html">Блог</a>
+          <a href="contact.html">Контакты</a>
+          <a class="active" href="account.html">Личный кабинет</a>
+          <a href="cart.html">Корзина <span class="badge" data-cart-badge>0</span></a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="section-header">
+          <div>
+            <h2>Войдите в кабинет</h2>
+            <p>История заказов, избранное и персональные рекомендации будут доступны после входа.</p>
+          </div>
+        </div>
+        <form class="form">
+          <div class="form-group">
+            <label for="account-email">E-mail</label>
+            <input id="account-email" name="email" type="email" placeholder="email@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="account-password">Пароль</label>
+            <input id="account-password" name="password" type="password" placeholder="Пароль" required />
+          </div>
+          <button class="btn btn-primary" type="submit">Войти</button>
+          <button class="btn btn-ghost" type="button">Зарегистрироваться</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="grid grid-cols-4">
+        <div>
+          <h3>Преимущества личного кабинета</h3>
+          <p>Сохраняйте избранное, отслеживайте статус заказов и получайте персональные предложения.</p>
+        </div>
+        <div>
+          <h4>Защита данных</h4>
+          <p>Двухфакторная аутентификация и шифрование паролей.</p>
+        </div>
+        <div>
+          <h4>Помощь</h4>
+          <p><a href="contact.html">Написать в поддержку</a></p>
+        </div>
+        <div>
+          <h4>Программа лояльности</h4>
+          <p>Бонусы за каждую покупку, персональные скидки, подарки ко дню рождения.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

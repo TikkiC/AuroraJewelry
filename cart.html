@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Корзина — Aurora Jewelry</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-page="cart">
+    <header>
+      <nav class="navbar">
+        <a class="brand" href="index.html" aria-label="Aurora Jewerly">
+          <picture>
+            <source srcset="assets/img/AuroraJewerlyVec.svg" type="image/svg+xml" />
+            <img src="assets/img/AuroraJewerly.png" alt="Aurora Jewerly" />
+          </picture>
+          <span>Aurora Jewerly</span>
+        </a>
+        <button class="mobile-toggle" type="button" data-nav-toggle aria-label="Открыть меню">☰</button>
+        <div class="nav-links" data-nav-links>
+          <a href="catalog.html">Каталог</a>
+          <a href="services.html">Услуги</a>
+          <a href="about.html">О бренде</a>
+          <a href="blog.html">Блог</a>
+          <a href="contact.html">Контакты</a>
+          <a href="account.html">Личный кабинет</a>
+          <a class="active" href="cart.html">Корзина <span class="badge" data-cart-badge>0</span></a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="section-header">
+          <div>
+            <h2>Корзина</h2>
+            <p>Проверьте состав заказа и при необходимости измените количество позиций.</p>
+          </div>
+          <a class="btn btn-ghost" href="catalog.html">Продолжить покупки</a>
+        </div>
+
+        <div class="alert" data-cart-empty style="display:none;">Ваша корзина пока пуста. Добавьте украшения из каталога.</div>
+
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th>Товар</th>
+              <th>Цена</th>
+              <th>Количество</th>
+              <th>Сумма</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody data-cart-body></tbody>
+        </table>
+
+        <div class="total">Итого: <span data-cart-total>0 ₽</span></div>
+        <div style="margin-top:18px; display:flex; gap:16px; flex-wrap:wrap;">
+          <button class="btn btn-primary" type="button">Перейти к оформлению</button>
+          <button class="btn btn-ghost" type="button" onclick="localStorage.removeItem('auroraCart'); location.reload();">Очистить корзину</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="grid grid-cols-4">
+        <div>
+          <h3>Доставка</h3>
+          <p>Курьер по всей России, самовывоз из салона, экспресс в пределах СПб.</p>
+        </div>
+        <div>
+          <h4>Оплата</h4>
+          <p>Банковская карта, рассрочка, наложенный платёж.</p>
+        </div>
+        <div>
+          <h4>Возврат</h4>
+          <p>В течение 14 дней при сохранении товарного вида и документов.</p>
+        </div>
+        <div>
+          <h4>Контроль качества</h4>
+          <p>Каждое украшение проверяется мастером перед отправкой.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

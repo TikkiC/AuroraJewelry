@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Блог — Aurora Jewelry</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-page="blog">
+    <header>
+      <nav class="navbar">
+        <a class="brand" href="index.html" aria-label="Aurora Jewerly">
+          <picture>
+            <source srcset="assets/img/AuroraJewerlyVec.svg" type="image/svg+xml" />
+            <img src="assets/img/AuroraJewerly.png" alt="Aurora Jewerly" />
+          </picture>
+          <span>Aurora Jewerly</span>
+        </a>
+        <button class="mobile-toggle" type="button" data-nav-toggle aria-label="Открыть меню">☰</button>
+        <div class="nav-links" data-nav-links>
+          <a href="catalog.html">Каталог</a>
+          <a href="services.html">Услуги</a>
+          <a href="about.html">О бренде</a>
+          <a class="active" href="blog.html">Блог</a>
+          <a href="contact.html">Контакты</a>
+          <a href="account.html">Личный кабинет</a>
+          <a href="cart.html">Корзина <span class="badge" data-cart-badge>0</span></a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="section-header">
+          <div>
+            <h2>Блог Aurora</h2>
+            <p>Руководства по уходу, истории клиентов и подборки стилистов. Материалы основаны на исследованиях из практики №1.</p>
+          </div>
+          <a class="btn btn-ghost" href="contact.html">Отправить историю</a>
+        </div>
+        <div class="grid grid-cols-4">
+          <article class="card">
+            <span class="badge">Гид по размерам</span>
+            <h3>Как подобрать кольцо по типу огранки</h3>
+            <p>Разбираем, как выбрать форму камня для повседневных и торжественных образов, чтобы посадка была комфортной.</p>
+            <a class="btn btn-ghost" href="#">Читать</a>
+          </article>
+          <article class="card">
+            <span class="badge">Тренды</span>
+            <h3>Фавориты сезона: серьги-конго</h3>
+            <p>Рассказываем о новом взгляде на классические серьги и показываем, чем вдохновились дизайнеры Aurora.</p>
+            <a class="btn btn-ghost" href="#">Читать</a>
+          </article>
+          <article class="card">
+            <span class="badge">Уход</span>
+            <h3>5 шагов к сиянию украшений</h3>
+            <p>Советы мастеров по чистке и хранению, чтобы ваши украшения служили десятилетиями.</p>
+            <a class="btn btn-ghost" href="#">Читать</a>
+          </article>
+          <article class="card">
+            <span class="badge">Истории клиентов</span>
+            <h3>Как мы создали колье к годовщине</h3>
+            <p>Кейс персонализации: выбор камней, процесс в мастерской и итоговый результат.</p>
+            <a class="btn btn-ghost" href="#">Читать</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="grid grid-cols-4">
+        <div>
+          <h3>Подпишитесь</h3>
+          <p>Получайте свежие статьи и подборки трендов на почту.</p>
+        </div>
+        <div>
+          <h4>Темы</h4>
+          <p>Уход, стилистика, обзоры, истории клиентов.</p>
+        </div>
+        <div>
+          <h4>Соцсети</h4>
+          <p>Следите за обновлениями в Instagram и VK.</p>
+        </div>
+        <div>
+          <h4>Связь</h4>
+          <p><a href="contact.html">Написать редакции</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
